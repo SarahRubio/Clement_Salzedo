@@ -6,17 +6,52 @@ body
 svg
 {
   padding: 30vh 30vw;
+  fill: white;
+  cursor: pointer;
 }
 
-button
+.button
 {
   background-color: inherit;
+  padding: 12vh 12vw;
   border: none;
   color: black;
-  visibility: hidden;
+  display: none;
+  font-size: 2em;
 }
 
-svg:hover.button
+.yellow
 {
-  visibility: visible;
+  fill: yellow;
+  stroke: black;
+}
+
+.yellow:hover
+{
+  fill: green;
+  stroke: black;
+}
+
+.green
+{
+  fill: green;
+  stroke: black;
+}
+
+.green:hover
+{
+  fill: yellow;
+  stroke: black;
+}
+
+.red
+{
+  fill: red;
+  stroke: black;
+}
+
+.red:hover
+{
+  fill: blue;
+  stroke: black;
 }
