@@ -1,66 +1,138 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 body
 {
-  background-color: antiquewhite;
+  background-color: #FFFFFF;
+  font-family: "Helvetica";
+  display: flex;
+  flex-direction: column;
+}
+
+h1
+{
+font-size: 2em;
+}
+
+.row
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vh 5vw;
+}
+
+.hamburger
+{
+  fill: black;
+}
+
+.cross, nav
+{
+  display: none;
+}
+
+.cross:after{
+  display: inline-block;
+  content: "\00d7"; /* This will render the 'X' */
+  font-weight: bold;
+  font-size: 4em;
 }
 
 .foot
 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 svg
 {
   fill: white;
   cursor: pointer;
+  margin: 0 5vw;
 }
 
-.button
+.yellow, .yellow2, .st21
 {
-  background-color: inherit;
-  border: none;
-  color: black;
+  fill: yellow;
+  stroke: black;
+}
+
+.yellowline, .yellowtext, .yellowarrow, .yellowline2, .yellowtext2, .yellowarrow2
+{
   visibility: hidden;
-  font-size: 2em;
 }
 
-.yellow
-{
-  fill: yellow;
-  stroke: black;
-}
-
-.yellow:hover
-{
-  fill: green;
-  stroke: black;
-}
-
-.green
-{
-  fill: green;
-  stroke: black;
-}
-
-.green:hover
-{
-  fill: yellow;
-  stroke: black;
-}
-
-.red
-{
-  fill: red;
-  stroke: black;
-}
-
-.red:hover
+.blue, .blue2
 {
   fill: blue;
   stroke: black;
 }
 
-.ligne, .film, .triangle
+.green, .green2
+{
+  fill: green;
+  stroke: black;
+}
+
+.greenline, .greentext, .greenarrow
+{
+  visibility: hidden;
+}
+
+.red, .red2, .red3
+{
+  fill: red;
+  stroke: black;
+}
+
+.redline, .redtext, .redtextbis, .redarrow, .redtext2, .redline2, .redarrow2, .redline3, .redtext3, .redarrow3
 {
   visibility: hidden;
 }
