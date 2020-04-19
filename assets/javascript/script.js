@@ -49,43 +49,160 @@ document.querySelector('.red').addEventListener("mouseout", function () {
 });
 }
 
-// SHOOT rotation
+// SHOOT rotation NY
 
-function trombiDynamique() {
+// function trombiDynamique() {
+//
+//   imageVisible = '<img border="0" src="'+pictures[chiffre]+'">';
+//   document.getElementById("box").innerHTML = imageVisible;
+//   if(chiffre == longueur)
+//       { chiffre = 0; }
+//       else
+//       { chiffre++; }
+//   changement = 1;
+// }
+//
+// document.querySelector('#box').addEventListener('mouseenter', function () {
+//   stopTrombi();
+// })
+//
+// document.querySelector('#box').addEventListener('mouseout', function () {
+//   startTrombi();
+// })
+//
+// function startTrombi() {
+//   let myVar = setTimeout("trombiDynamique()", (changement*2000))
+// }
+//
+// function stopTrombi() {
+//   clearTimeOut(myVar);
+// }
+//
+//   pictures = new Array()
+//   pictures[0] = 'assets/images/newyork1.png';
+//   pictures[1] = 'assets/images/newyork2.png';
+//   pictures[2] = 'assets/images/newyork3.png';
+//   pictures[3] = 'assets/images/newyork4.png';
+//   pictures[4] = 'assets/images/newyork5.png';
+//   longueur = pictures.length-1;
+//
+//   liens = new Array()
+//   liens[0] = 'lien_image1.html';
+//   liens[1] = 'lien_image2.html';
+//   liens[2] = 'lien_image3.html';
+//   liens[3] = 'lien_image4.html';
+//   liens[4] = 'lien_image5.html';
+//   chiffre = 0;
 
-  let rotate = true;
+let keepgoing = true;
 
-  document.getElementById("box").addEventListener('mouseenter', function () {
-    rotate = false;
-  });
+if(document.querySelector('.newyork')){
+function trombiDynamique1() {
 
-  if (rotate = true) {
-  imageVisible = '<img border="0" src="'+pictures[chiffre]+'">';
+  imageVisible = '<img border="0" src="'+ pictures[chiffre] +'">';
   document.getElementById("box").innerHTML = imageVisible;
   if(chiffre == longueur)
       { chiffre = 0; }
       else
       { chiffre++; }
   changement = 1;
-  window.setTimeout("trombiDynamique()", (changement*2000));
+
+  if(keepgoing){
+    window.setTimeout("trombiDynamique1()", (changement*2000));
   }
+
 }
 
-  pictures = new Array()
-  pictures[0] = 'assets/images/newyork1.png';
-  pictures[1] = 'assets/images/newyork2.png';
-  pictures[2] = 'assets/images/newyork3.png';
-  pictures[3] = 'assets/images/newyork4.png';
-  pictures[4] = 'assets/images/newyork5.png';
-  longueur = pictures.length-1;
+pictures = new Array()
+pictures[0] = 'assets/images/newyork1.png';
+pictures[1] = 'assets/images/newyork2.png';
+pictures[2] = 'assets/images/newyork3.png';
+pictures[3] = 'assets/images/newyork4.png';
+pictures[4] = 'assets/images/newyork5.png';
+longueur = pictures.length-1;
 
-  liens = new Array()
-  liens[0] = 'lien_image1.html';
-  liens[1] = 'lien_image2.html';
-  liens[2] = 'lien_image3.html';
-  liens[3] = 'lien_image4.html';
-  liens[4] = 'lien_image5.html';
-  chiffre = 0;
+liens = new Array()
+liens[0] = 'lien_image1.html';
+liens[1] = 'lien_image2.html';
+liens[2] = 'lien_image3.html';
+liens[3] = 'lien_image4.html';
+liens[4] = 'lien_image5.html';
+chiffre = 0;
+
+function startTrombi1 () {
+  keepgoing = true;
+  trombiDynamique1();
+}
+
+function stopTrombi () {
+  keepgoing = false;
+}
+
+document.querySelector('#box').addEventListener('mouseenter', function () {
+  stopTrombi();
+})
+
+document.querySelector('#box').addEventListener('mouseout', function () {
+  startTrombi1();
+})
+}
+
+// ROTATION L'histoire Trouble de M.pierre
+
+if (document.querySelector('.lhistoiretroubledempierre')) {
+
+let keepgoing = true;
+
+function trombiDynamique2() {
+
+  imageVisible = '<img border="0" src="'+ pictures[chiffre] +'">';
+  document.getElementById("box").innerHTML = imageVisible;
+  if(chiffre == longueur)
+      { chiffre = 0; }
+      else
+      { chiffre++; }
+  changement = 1;
+
+  if(keepgoing){
+    window.setTimeout("trombiDynamique2()", (changement*2000));
+  }
+
+}
+
+pictures = new Array()
+pictures[0] = 'assets/images/lhistoiretroubledempierre1.jpg';
+pictures[1] = 'assets/images/lhistoiretroubledempierre2.jpg';
+pictures[2] = 'assets/images/lhistoiretroubledempierre3.jpg';
+pictures[3] = 'assets/images/lhistoiretroubledempierre4.jpg';
+pictures[4] = 'assets/images/lhistoiretroubledempierre5.jpg';
+longueur = pictures.length-1;
+
+liens = new Array()
+liens[0] = 'lien_image1.html';
+liens[1] = 'lien_image2.html';
+liens[2] = 'lien_image3.html';
+liens[3] = 'lien_image4.html';
+liens[4] = 'lien_image5.html';
+chiffre = 0;
+
+function startTrombi2 () {
+  keepgoing = true;
+  trombiDynamique2();
+}
+
+function stopTrombi () {
+  keepgoing = false;
+}
+
+document.querySelector('#box').addEventListener('mouseenter', function () {
+  stopTrombi();
+})
+
+document.querySelector('#box').addEventListener('mouseout', function () {
+  startTrombi2();
+})
+}
+
 
 
 // ///////////////////////////////////////////// REMAIN
