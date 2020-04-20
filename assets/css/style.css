@@ -156,6 +156,8 @@ font-size: 								2.3em;
 .hs-wrapper
 {
 	position: relative;
+	width: 1280px;
+	height: 566px;
 }
 
 .hs-wrapper .image
