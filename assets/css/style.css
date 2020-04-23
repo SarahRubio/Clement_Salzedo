@@ -96,9 +96,21 @@ font-size: 								2.3em;
 	color: 									black;
 }
 
+.fontwhite
+{
+	color: 									#fff;
+}
+
 .text-deco-none
 {
 	text-decoration: 				none;
+}
+
+/***************background  */
+
+.bg-black
+{
+	background-color: 			#000;
 }
 
 /***************Border  */
@@ -151,7 +163,7 @@ font-size: 								2.3em;
 	flex-wrap:							wrap;
 }
 
-/******************* SLIDESHOW  */
+/******************* SLIDESHOW lhistoiretroubledempierre */
 
 .hs-wrapper
 {
@@ -163,6 +175,7 @@ font-size: 								2.3em;
 .hs-wrapper .image
 {
 	position: relative;
+	object-fit: cover;
 }
 
 .hs-wrapper .image img
@@ -170,6 +183,8 @@ font-size: 								2.3em;
 	position: absolute;
 	animation: showMe 10s linear infinite 0s forwards;
 	animation-play-state: running;
+	width: 1280px;
+	height: 566px;
 }
 
 .hs-wrapper:hover .image img
@@ -217,8 +232,273 @@ font-size: 								2.3em;
 	z-index: 5;
 }
 
+/******************* SLIDESHOW la Dynastie des poissons  */
 
-/****************** WORKS  */
+.hs-wrapperDynast
+{
+	position: relative;
+	width: 1280px;
+	height: 720px;
+}
+
+.hs-wrapperDynast .image
+{
+	position: relative;
+}
+
+.hs-wrapperDynast .image img
+{
+	position: absolute;
+	animation: showMeDynast 29s linear infinite 0s forwards;
+	animation-play-state: running;
+	width: 1280px;
+	height: 720px;
+}
+
+.hs-wrapperDynast:hover .image img
+{
+	animation-play-state: paused;
+}
+
+@keyframes showMeDynast {
+    0% {
+			visibility: visible;
+			z-index: 100;
+		}
+		11,12% {
+			visibility: hidden;
+			z-index: 0;
+		}
+		100% {
+			visibility: hidden;
+			z-index: 0;
+		}
+}
+
+.hs-wrapperDynast .image:nth-child(1) img{
+	z-index: 9;
+}
+.hs-wrapperDynast .image:nth-child(2) img{
+	animation-delay: 3s;
+	z-index: 8;
+}
+.hs-wrapperDynast .image:nth-child(3) img{
+	animation-delay: 6s;
+	z-index: 7;
+}
+.hs-wrapperDynast .image:nth-child(4) img{
+	animation-delay: 9s;
+	z-index: 6;
+}
+
+.hs-wrapperDynast .image:nth-child(5) img{
+	animation-delay: 12s;
+	z-index: 5;
+}
+
+.hs-wrapperDynast .image:nth-child(6) img{
+	animation-delay: 15s;
+	z-index: 4;
+}
+
+.hs-wrapperDynast .image:nth-child(7) img{
+	animation-delay: 18s;
+	z-index: 4;
+}
+
+.hs-wrapperDynast .image:nth-child(8) img{
+	animation-delay: 21s;
+	z-index: 3;
+}
+
+.hs-wrapperDynast .image:nth-child(9) img{
+	animation-delay: 24s;
+	z-index: 2;
+}
+
+/****************** SLIDESHOW La pizza sentait le chien  */
+
+
+.hs-wrapperPizza
+{
+	position: relative;
+	width: 1280px;
+	height: 470px;
+}
+
+.hs-wrapperPizza .image
+{
+	position: relative;
+}
+
+.hs-wrapperPizza .image img
+{
+	position: absolute;
+	animation: showMePizza 30s linear infinite 0s forwards;
+	animation-play-state: running;
+	width: 1280px;
+	height: 470px;
+}
+
+.hs-wrapperPizza:hover .image img
+{
+	animation-play-state: paused;
+}
+
+@keyframes showMePizza {
+    0% {
+			visibility: visible;
+			z-index: 100;
+		}
+		10,1% {
+			visibility: hidden;
+			z-index: 0;
+		}
+		100% {
+			visibility: hidden;
+			z-index: 0;
+		}
+}
+
+.hs-wrapperPizza .image:nth-child(1) img{
+	z-index: 9;
+}
+.hs-wrapperPizza .image:nth-child(2) img{
+	animation-delay: 3s;
+	z-index: 8;
+}
+.hs-wrapperPizza .image:nth-child(3) img{
+	animation-delay: 6s;
+	z-index: 7;
+}
+.hs-wrapperPizza .image:nth-child(4) img{
+	animation-delay: 9s;
+	z-index: 6;
+}
+
+.hs-wrapperPizza .image:nth-child(5) img{
+	animation-delay: 12s;
+	z-index: 5;
+}
+
+.hs-wrapperPizza .image:nth-child(6) img{
+	animation-delay: 15s;
+	z-index: 4;
+}
+
+.hs-wrapperPizza .image:nth-child(7) img{
+	animation-delay: 18s;
+	z-index: 4;
+}
+
+.hs-wrapperPizza .image:nth-child(8) img{
+	animation-delay: 21s;
+	z-index: 3;
+}
+
+.hs-wrapperPizza .image:nth-child(9) img{
+	animation-delay: 24s;
+	z-index: 2;
+}
+
+.hs-wrapperPizza .image:nth-child(10) img{
+	animation-delay: 27s;
+	z-index: 1;
+}
+
+/********************* SLIDESHOW Niaiseries sans paroles  */
+
+
+
+.hs-wrapperNiaiseries
+{
+	position: relative;
+	width: 1280px;
+	height: 720px;
+}
+
+.hs-wrapperNiaiseries .image
+{
+	position: relative;
+}
+
+.hs-wrapperNiaiseries .image img
+{
+	position: absolute;
+	animation: showMeNiaiseries 30s linear infinite 0s forwards;
+	animation-play-state: running;
+	width: 1280px;
+	height: 720px;
+}
+
+.hs-wrapperNiaiseries:hover .image img
+{
+	animation-play-state: paused;
+}
+
+@keyframes showMeNiaiseries {
+    0% {
+			visibility: visible;
+			z-index: 100;
+		}
+		10,1% {
+			visibility: hidden;
+			z-index: 0;
+		}
+		100% {
+			visibility: hidden;
+			z-index: 0;
+		}
+}
+
+.hs-wrapperNiaiseries .image:nth-child(1) img{
+	z-index: 9;
+}
+.hs-wrapperNiaiseries .image:nth-child(2) img{
+	animation-delay: 3s;
+	z-index: 8;
+}
+.hs-wrapperNiaiseries .image:nth-child(3) img{
+	animation-delay: 6s;
+	z-index: 7;
+}
+.hs-wrapperNiaiseries .image:nth-child(4) img{
+	animation-delay: 9s;
+	z-index: 6;
+}
+
+.hs-wrapperNiaiseries .image:nth-child(5) img{
+	animation-delay: 12s;
+	z-index: 5;
+}
+
+.hs-wrapperNiaiseries .image:nth-child(6) img{
+	animation-delay: 15s;
+	z-index: 4;
+}
+
+.hs-wrapperNiaiseries .image:nth-child(7) img{
+	animation-delay: 18s;
+	z-index: 4;
+}
+
+.hs-wrapperNiaiseries .image:nth-child(8) img{
+	animation-delay: 21s;
+	z-index: 3;
+}
+
+.hs-wrapperNiaiseries .image:nth-child(9) img{
+	animation-delay: 24s;
+	z-index: 2;
+}
+
+.hs-wrapperNiaiseries .image:nth-child(10) img{
+	animation-delay: 27s;
+	z-index: 1;
+}
+
+/****************** Header  */
+
 .grid
 {
 	display: grid;
@@ -229,6 +509,8 @@ font-size: 								2.3em;
 {
 	align-self: center;
 }
+
+/********************* GRID Works  */
 
 .wrapper
 {
@@ -307,6 +589,19 @@ backdrop-filter: blur(5px) saturate(1.8); */
 			top: 50%;
 		}
 }
+
+.cartel
+{
+	position: absolute;
+	top: 100%;
+	left: 90%;
+}
+
+.title:hover
+{
+	color: #fff;
+	background-color: #000;
+}
 /****************** MARGIN  */
 
 .margtopbot3
@@ -341,6 +636,11 @@ backdrop-filter: blur(5px) saturate(1.8); */
 	margin-top: 						5vh;
 }
 
+.margtop15
+{
+	margin-top: 						15vh;
+}
+
 .margbot0
 {
 	margin-bottom: -1px;
@@ -352,9 +652,39 @@ backdrop-filter: blur(5px) saturate(1.8); */
 	padding: 								1vh 1vw;
 }
 
+.padfull2
+{
+	padding: 								2vh 2vw;
+}
+
 .padbot5
 {
 	padding-bottom: 				5vh;
+}
+
+@media screen and (max-width: 1200px)
+{
+		.hs-wrapper
+		{
+		width: 640px;
+		height: 283px;
+		}
+
+		.hs-wrapper .image img
+		{
+		width: 640px;
+		height: 283px;
+		}
+
+		.title
+		{
+			margin-top: 3vh;
+		}
+
+		.cartel
+		{
+			margin-top: 1vh;
+		}
 }
 
 
@@ -407,8 +737,39 @@ nav ul a:hover
   font-size: 4em;
 	align-self: flex-start;
 }
-/****************************** Works  */
+/****************************** sliderQuote  */
+/* .width100
+{
+	width: 100%;
+}
 
+.displayblock
+{
+	display: block;
+}
+
+.sliderQuote
+{
+	animation: sliderquotation 10s infinite linear;
+
+}
+
+.overflowH
+{
+	overflow: hidden;
+}
+
+@keyframes sliderquotation
+{
+	from {
+		margin-left: 100%;
+	  width: 300%;
+	}
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+} */
 
 
 /******************************  */
