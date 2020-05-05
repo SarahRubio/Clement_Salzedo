@@ -935,40 +935,6 @@ nav ul a:hover
   font-size: 4em;
 	align-self: flex-start;
 }
-/****************************** sliderQuote  */
-/* .width100
-{
-	width: 100%;
-}
-
-.displayblock
-{
-	display: block;
-}
-
-.sliderQuote
-{
-	animation: sliderquotation 10s infinite linear;
-
-}
-
-.overflowH
-{
-	overflow: hidden;
-}
-
-@keyframes sliderquotation
-{
-	from {
-		margin-left: 100%;
-	  width: 300%;
-	}
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-} */
-
 
 /***************************** Footer  */
 
