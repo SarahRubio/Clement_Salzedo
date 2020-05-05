@@ -974,6 +974,11 @@ nav ul a:hover
 	font-size: 0.9em;
 }
 
+.link-np a:hover
+{
+	color: #777373;
+}
+
 /******************************  */
 
 .foot
