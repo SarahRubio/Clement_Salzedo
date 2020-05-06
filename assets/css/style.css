@@ -1247,6 +1247,11 @@ svg
 			margin-top: calc(500px + 55vh);
 		}
 
+		.margtop70
+		{
+			margin-top: calc(400px + 50vh);
+		}
+
 		.quote
 		{
 			width: 100%;
