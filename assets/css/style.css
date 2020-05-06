@@ -915,6 +915,7 @@ nav ul
 {
 	list-style: 						none;
 	display: 								flex;
+	justify-content: 				center;
 }
 
 nav ul a
@@ -1232,9 +1233,9 @@ svg
 			margin-top: 5vh;
 		}
 
-		.margtop55
+		.margtop55, .martop70, .margtop40
 		{
-    	margin-top: 85vh;
+    	margin-top: calc(400px + 19vh);
 		}
 
 		.quote
