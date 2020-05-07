@@ -1167,13 +1167,13 @@ svg
 		height: 470px;
 	}
 
-	.hs-wrapperNiaiseries
+	.hs-wrapperNiaiseries, .hs-wrapperKlaxon
 	{
 		width: 1280px;
 		height: 720px;
 	}
 
-	.hs-wrapperNiaiseries .image img
+	.hs-wrapperNiaiseries .image img, 	.hs-wrapperKlaxon .image img
 	{
 		width: 1280px;
 		height: 720px;
@@ -1279,13 +1279,13 @@ svg
 			height: 141.5px;
 		}
 
-		.hs-wrapperNiaiseries
+		.hs-wrapperNiaiseries, .hs-wrapperKlaxon
 		{
 			width: 320px;
 			height: 180px;
 		}
 
-		.hs-wrapperNiaiseries .image img
+		.hs-wrapperNiaiseries .image img, 	.hs-wrapperKlaxon .image img
 		{
 			width: 320px;
 			height: 180px;
