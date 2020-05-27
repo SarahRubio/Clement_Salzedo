@@ -61,34 +61,61 @@ document.querySelector('.red').addEventListener("mouseout", function () {
 
 // SLIDESHOW rotation NEWYORK SANS POSSIBILITE ARRET SUR IMAGE.
 
-function trombiDynamique() {
+      let timer = {};
+      let index = 0;
 
-      imageVisible = '<img border="0" src="'+pictures[chiffre]+'">';
-      document.getElementById('box').innerHTML = imageVisible;
-      if(chiffre == longueur) {
-        chiffre = 0;
-      } else {
-        chiffre++;
+      pictures = new Array()
+      pictures[0] = 'assets/images/newyork1.png';
+      pictures[1] = 'assets/images/newyork2.png';
+      pictures[2] = 'assets/images/newyork3.png';
+      pictures[3] = 'assets/images/newyork4.png';
+      pictures[4] = 'assets/images/newyork5.png';
+      longueur = pictures.length-1;
+
+      liens = new Array()
+      liens[0] = 'lien_image1.html';
+      liens[1] = 'lien_image2.html';
+      liens[2] = 'lien_image3.html';
+      liens[3] = 'lien_image4.html';
+      liens[4] = 'lien_image5.html';
+
+      function startTrombi() {
+          if (index > pictures.length) {
+            index = 0;
+          }
+          changerImage(index);
+          index++;
+          timer = window.setTimeout(startTrombi(), 2000);
+        console.log("InsidestartTrombi");
       }
-      changement = 1;
-      window.setTimeout("trombiDynamique()", (changement*2000));
+
+      console.log("startTrombi");
+
+      function stopTrombi() {
+        clearTimeOut(timer);
+        console.log("InsidestopTrombi");
+      }
+
+      console.log("stopTrombi");
+
+      document.querySelector('#box').addEventListener('mouseenter', function () {
+        stopTrombi();
+      })
+
+      document.querySelector('#box').addEventListener('mouseout', function () {
+        startTrombi();
+      })
+
+      let keepgoing = true;
+
+function changerImage(indice) {
+
+      imageVisible = '<img border="0" src="'+pictures[indice]+'">';
+      document.getElementById('box').innerHTML = imageVisible;
+
 }
 
-    pictures = new Array()
-    pictures[0] = 'assets/images/newyork1.png';
-    pictures[1] = 'assets/images/newyork2.png';
-    pictures[2] = 'assets/images/newyork3.png';
-    pictures[3] = 'assets/images/newyork4.png';
-    pictures[4] = 'assets/images/newyork5.png';
-    longueur = pictures.length-1;
 
-    liens = new Array()
-    liens[0] = 'lien_image1.html';
-    liens[1] = 'lien_image2.html';
-    liens[2] = 'lien_image3.html';
-    liens[3] = 'lien_image4.html';
-    liens[4] = 'lien_image5.html';
-    chiffre = 0;
 
 
 // DEUXIEME ESSAI SLIDESHOW AVEC POSSIBILITE ARRET SUR IMAGE
@@ -97,25 +124,11 @@ function trombiDynamique() {
         //   setTimeout(trombiDynamique(), 2000);
         //   let timer = setTimeout(trombiDynamique(), 2000);
         // }
-
+        //
         // function stopTrombi() {
         //   clearTimeOut(timer);
         // }
-
-        // function trombiDynamique() {
         //
-        //   imageVisible = '<img border="0" src="'+pictures[chiffre]+'">';
-        //
-        //   document.getElementById("box").innerHTML = imageVisible;
-        //
-        //   if(chiffre == longueur) {
-        //     chiffre = 0;
-        //   } else {
-        //     chiffre++;
-        //   };
-        //
-        // }
-
         // document.querySelector('#box').addEventListener('mouseenter', function () {
         //   stopTrombi();
         // })
@@ -123,7 +136,11 @@ function trombiDynamique() {
         // document.querySelector('#box').addEventListener('mouseout', function () {
         //   startTrombi();
         // })
-
+        //
+        // let keepgoing = true;
+        //
+        // function trombiDynamique() {
+        //
         //   pictures = new Array()
         //   pictures[0] = 'assets/images/newyork1.png';
         //   pictures[1] = 'assets/images/newyork2.png';
@@ -140,7 +157,19 @@ function trombiDynamique() {
         //   liens[4] = 'lien_image5.html';
         //   chiffre = 0;
         //
-        // let keepgoing = true;
+        //   imageVisible = '<img border="0" src="'+pictures[chiffre]+'">';
+        //
+        //   document.getElementById("box").innerHTML = imageVisible;
+        //
+        //   if(chiffre == longueur) {
+        //     chiffre = 0;
+        //   } else {
+        //     chiffre++;
+        //   };
+        //
+        // }
+        //
+
 
 // TROISIEME ESSAI SLIDESHOW
 
