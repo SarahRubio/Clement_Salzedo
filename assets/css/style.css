@@ -180,6 +180,12 @@ font-size: 								2.3em;
 	background-color: 			#000;
 }
 
+
+.bgWhite
+{
+	background-color: 			#fff;
+}
+
 /***************Border  */
 
 .borderbot
@@ -228,6 +234,15 @@ font-size: 								2.3em;
 .wrap
 {
 	flex-wrap:							wrap;
+}
+
+/********************Formulaire de contact  */
+
+.submitButton:hover
+{
+	background-color: black;
+	color: white;
+	cursor: pointer;
 }
 
 /******************* SLIDESHOW lhistoiretroubledempierre */
