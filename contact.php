@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+<?php
+
+  session_start();
+
+ ?><!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -34,8 +38,17 @@
 
       <h2 class="titleMedia maj font23 fontgrey bold margbot5 textcenter fontAndalemono">Contact</h2>
 
+          <?php
+              if (
+                isset($_SESSION["erreur"]) &&
+                $_SESSION["erreur_envoi"] === true) {
+                    echo "<p class='tcenter font09'>Une erreur s'est produite. Veuillez vérifier les champs du formulaire</p>";
+                    unset($_SESSION["erreur"]);
+              }
+           ?>
+
       <div class="flex column aicenter fontRoboto">
-        <form class="" action="contact.php" method="post">
+        <form class="" action="envoiForm.php" method="post">
 
           <div class="flex column margbot4">
             <label for="nom">Nom</label>
